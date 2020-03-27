@@ -1,4 +1,4 @@
-package com.gpf.third;
+package com.gpf.study.netty.third;
 
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerContext;

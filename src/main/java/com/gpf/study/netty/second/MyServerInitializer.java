@@ -1,4 +1,4 @@
-package com.gpf.second;
+package com.gpf.study.netty.second;
 
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelInitializer;

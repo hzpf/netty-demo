@@ -1,4 +1,4 @@
-package com.gpf.first;
+package com.gpf.study.netty.first;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;

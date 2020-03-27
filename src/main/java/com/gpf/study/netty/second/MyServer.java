@@ -1,4 +1,4 @@
-package com.gpf.second;
+package com.gpf.study.netty.second;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;

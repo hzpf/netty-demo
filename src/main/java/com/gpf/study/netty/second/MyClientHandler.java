@@ -1,9 +1,9 @@
-package com.gpf.second;
+package com.gpf.study.netty.second;
 
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 
-public class MyServerHandler extends SimpleChannelInboundHandler<String> {
+public class MyClientHandler extends SimpleChannelInboundHandler<String> {
 
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, String msg) {
@@ -13,7 +13,12 @@ public class MyServerHandler extends SimpleChannelInboundHandler<String> {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        ctx.channel().writeAndFlush("来自服务端的消息：" + System.currentTimeMillis());
+        ctx.channel().writeAndFlush("来自客户端的消息：" + System.currentTimeMillis());
+    }
+
+    @Override
+    public void channelActive(ChannelHandlerContext ctx) throws Exception {
+        ctx.channel().writeAndFlush("来自客户端的问候");
     }
 
     @Override
