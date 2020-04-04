@@ -1,0 +1,36 @@
+syntax = "proto2";
+
+package gpf.third;
+
+option java_package = "gpf.third";
+option java_outer_classname = "MessageTypeOuter";
+
+
+message MessageType {
+    enum DataType {
+        PersonType = 1;
+        DogType = 2;
+        CatType = 3;
+    }
+
+    required DataType data_type = 1;
+
+    oneof dataBody {
+        Person person = 2;
+        Dog dog = 3;
+        Cat cat = 4;
+    }
+}
+
+
+message Person {
+    optional string name = 1;
+}
+
+message Dog {
+    optional string name = 1;
+}
+
+message Cat {
+    optional string name = 1;
+}
