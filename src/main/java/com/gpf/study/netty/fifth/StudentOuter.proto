@@ -1,6 +1,6 @@
 syntax = "proto2";
 
-package com.gpf.study.netty.protobuf;
+package com.gpf.study.netty.fifth;
 
 option java_package = "com.gpf.study.netty.fifth";
 option java_outer_classname = "StudentOuter";
